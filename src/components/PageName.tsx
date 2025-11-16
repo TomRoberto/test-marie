@@ -6,6 +6,8 @@ import { useLangContext } from "@/contexts/LangContext";
 import { MainPaths, Paths } from "@/utils/constants";
 import { i18n } from "@/utils/i18n";
 
+import Title from "./Title";
+
 const PageName = () => {
   const { lang } = useLangContext();
   const pathname = usePathname() as Paths;
@@ -30,7 +32,9 @@ const PageName = () => {
   const pageName = pageNames[mainPath];
 
   return (
-    <div className="text-3xl relative font-bold">{pageName.toUpperCase()}</div>
+    <Title className="font-bold" level={1}>
+      {pageName.toUpperCase()}
+    </Title>
   );
 };
 

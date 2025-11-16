@@ -5,6 +5,10 @@ type TLangKeys =
   | "criminalBusinessLaw"
   | "criminalCourt"
   | "custodyAudition"
+  | "expertise_expertiseInBusinessCriminalLaw_paragraph"
+  | "expertise_expertiseInBusinessCriminalLaw"
+  | "expertise_individualizedCriminalDefense_paragraph"
+  | "expertise_individualizedCriminalDefense"
   | "expertise"
   | "familyLaw"
   | "familyLawAndPersonalInjuryLaw"
@@ -29,6 +33,17 @@ const frTranslations: { [key in TLangKeys]: string } = {
   criminalCourt: "Cour d'assises",
   custodyAudition: "Audition de la garde",
   expertise: "Expertise",
+  expertise_expertiseInBusinessCriminalLaw:
+    "Compétence en droit pénal des affaires",
+  expertise_expertiseInBusinessCriminalLaw_paragraph: `Me Marie Bélézy est également compétente en droit pénal des affaires 
+  et intervient dans des dossiers sensibles et complexes tels que :
+  • blanchiment de capitaux
+  • escroquerie, abus de confiance
+  • abus de biens sociaux (y compris pour les personnes morales)`,
+  expertise_individualizedCriminalDefense: "Une défense pénale sur mesure",
+  expertise_individualizedCriminalDefense_paragraph: `Le cabinet de Maître Marie Bélézy vous accompagne à tous les stades de la procédure pénale, que vous soyez mis en cause, mis en examen ou victime, dans le cadre d’affaires délictuelles ou criminelles. Elle intervient  dans tous types d’infractions pénales :
+  • Crimes : assassinat, meurtre, viol, terrorisme
+  • Délits : vol, recel, extorsion, agression sexuelle, trafic de stupéfiants`,
   familyLaw: "Droit de la famille",
   familyLawAndPersonalInjuryLaw: "Droit de la famille et des personnes",
   fees: "Honoraires",
