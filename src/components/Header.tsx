@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 
 import building from "@/assets/images/building.png";
 import cn from "@/utils/cn";
-import { Paths } from "@/utils/constants";
+import { Paths, pathsList } from "@/utils/constants";
 
 import Container from "./Container";
 import LangSwitch from "./LangSwitch";
@@ -17,6 +17,8 @@ const Header = () => {
   const pathname = usePathname();
 
   const isHomePage: boolean = pathname === Paths.home;
+
+  if (!pathsList.includes(pathname as Paths)) return null;
 
   return (
     <header

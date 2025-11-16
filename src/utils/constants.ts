@@ -13,6 +13,8 @@ export enum Paths {
   news = "/news",
 }
 
+export const pathsList: Paths[] = Object.values(Paths);
+
 export enum MainPaths {
   contacts = Paths.contacts,
   expertise = Paths.expertise,
